@@ -1,0 +1,35 @@
+# Node modules
+node_modules/
+
+# Next.js build output
+.next/
+
+# Development config files
+*.config.js
+
+# Environment variables
+.env*
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Git directory
+.git/
+
+# Other non-essential files
+**/*.log
+**/*.ckpt
+**/Dockerfile*
+**/.dockerignore
+**/.gitignore
+**/.npmrc
+**/.yarnrc
+*.lock
+yarn.lock
+package-lock.json
+npm-debug.log
+yarn-error.log
+.editorconfig
+*.DS_Store
+*.pem
