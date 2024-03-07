@@ -9,6 +9,7 @@ export default function Home() {
   const [drink, setDrink] = useState('');
   const [tablePreference, setTablePreference] = useState('');
   const [specialOccasion, setSpecialOccasion] = useState('');
+  const [budget, setBudget] = useState('');
   const [dietaryRestrictions, setDietaryRestrictions] = useState('');
 
   return (
@@ -84,8 +85,19 @@ export default function Home() {
             />
             {drink && <p>{drink} is a perfect choice for staying refreshed!</p>}
           </div>
+        
+          <div>
+            <h2>What is your budget?</h2>
+            <input
+              type="text"
+              value={budget}
+              onChange={(e) => setBudget(e.target.value)}
+              placeholder="$20-$30..."
+            />
+            {specialOccasion && <p>Good to know your budget of {budget}.</p>}
+          </div>
         </>
-      )}
+       )}
 
       {name && tablePreference && specialOccasion && dietaryRestrictions && food && drink && (
         <div>
